@@ -1,0 +1,10 @@
+target/
+.vscode/
+.settings/
+.mvn/
+mvnw.cmd
+mvwn
+.project
+.factorypath
+.dockerignore
+.classpath
