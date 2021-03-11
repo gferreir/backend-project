@@ -17,11 +17,12 @@ public class ColetaRepository implements PanacheRepository<Coleta>{
 	}
 
 	public Coleta buscaColetaPorCodigo(String codigo){
-		try {
-			return Coleta.find("codigoColeta", codigo).firstResult();
-		}catch (Exception e) {
+		Coleta coleta = Coleta.find("codigoColeta", codigo).firstResult();
+
+		if(coleta == null){
 			throw new NotFoundException();
 		}
+		return coleta;
 	}
 
 	public void cadastraColeta(CadastrarColetaDTO dto){

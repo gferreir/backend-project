@@ -38,8 +38,15 @@ You can then execute your native executable with: `./target/backend-1.0.0-SNAPSH
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
-# RESTEasy JAX-RS
+# TODO
 
-<p>A Hello World RESTEasy resource</p>
+**Minimal**
+- Verificação request body vazio
+- Verificação codigoColeta se já existe para cadastro
+- Validação se codigoColeta existe para deleção
 
-Guide: https://quarkus.io/guides/rest-json
+**Plus**
+- Paginação select
+- Implementação das rotas
+- Integração API google maps
+- Permissão e autenticação para chamadas
